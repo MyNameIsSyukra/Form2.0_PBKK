@@ -39,4 +39,8 @@ class formController extends Controller
         $col = collect(form::all());        
         return view('result',$col->last());
     }
+    public function showAll(){
+        $data = form::all();
+        return view('showall',compact('data'));
+    }
 }
