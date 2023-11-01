@@ -41,6 +41,9 @@ class formController extends Controller
     }
     public function showAll(){
         $data = form::all();
+        // for($i = 0;$i<10;$i++){
+        //     if(Cache::has)
+        // }
         return view('showall',compact('data'));
     }
 }
